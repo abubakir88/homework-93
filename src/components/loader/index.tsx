@@ -1,22 +1,24 @@
 import React, { CSSProperties } from "react";
-import { ClipLoader } from "react-spinners";
+import { BeatLoader } from "react-spinners";
 
-const override: CSSProperties = {
-  display: "block",
-  margin: "0 auto",
-  borderColor: "red",
-};
+// const override: CSSProperties = {
+//   display: "block",
+//   margin: "0 auto",
+//   borderColor: "red",
+// };
 
 const Loader = () => {
   return (
-    <ClipLoader
-      color="white"
-      loading={true}
-      cssOverride={override}
-      size={150}
-      aria-label="Loading Spinner"
-      data-testid="loader"
-    />
+    <div className="text-center p-32">
+      <BeatLoader
+        color="#36d7b7"
+        cssOverride={{}}
+        loading
+        margin={2}
+        size={29}
+        speedMultiplier={3}
+      />
+    </div>
   );
 };
 
