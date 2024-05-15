@@ -1,10 +1,10 @@
-import Link from "next/link";
 import React from "react";
+import Products from "./products/page";
 
 const Home = () => {
   return (
     <div>
-      <Link href="/products">Products</Link>
+      <Products />
     </div>
   );
 };
