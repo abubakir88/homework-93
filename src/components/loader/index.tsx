@@ -16,7 +16,7 @@ const Loader = () => {
         loading
         margin={2}
         size={29}
-        speedMultiplier={3}
+        speedMultiplier={1}
       />
     </div>
   );
